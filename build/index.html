@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <body class="font-sans bg-gray-100">
+        <header class="sticky top-0 z-10">
+            <!-- Sticky Navbar -->
+            <nav class="bg-green-500 shadow-md p-4">
+                <div class="container mx-auto flex items-center justify-between">
+                    <h1 class="text-2xl font-bold text-white">ProTualis</h1>
+
+                    <!-- Navbar Links for Desktop -->
+                    <div class="hidden md:flex items-center space-x-4 nav-links">
+                        <a href="#" class="text-white">Link1</a>
+                        <a href="#" class="text-white">Link2</a>
+                        <a href="#" class="text-white">Link3</a>
+                        <a href="#" class="text-white">Contact</a>
+                    </div>
+
+                    <!-- Hamburger Toggle for Mobile -->
+                    <button class="md:hidden text-white nav-toggle">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden fixed top-16 left-0 right-0 bg-green-500 p-4 nav-mobile hidden">
+                <a href="#" class="text-white">Link1</a>
+                <a href="#" class="text-white">Link2</a>
+                <a href="#" class="text-white">Link3</a>
+                <a href="#" class="text-white">Contact</a>
+            </div>
+        </header>
+        
+        
+        <main>
+            <!-- Video Section -->
+            <section class="mx-auto grid grid-cols-1">
+                <!-- Empty grid column to center the content -->
+                <div class="md:col-span-1 lg:col-span-2"></div>
+
+                <!-- Video Embed -->
+                <div class="md:col-span-2 lg:col-span-1">
+                    <div class="relative overflow-hidden">
+                        <iframe
+                            width="100%"
+                            height="315"
+                            src="https://www.youtube.com/embed/your-video-id"
+                            frameborder="0"
+                            allow="autoplay; encrypted-media"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="container mx-auto p-4">
+                <div id="accordion">
+                    <div class="rounded-t-lg border border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+                        <h2 class="mb-0" id="headingOne">
+                            <button class="group relative flex w-full items-center rounded-t-[15px] border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                                type="button" data-te-collapse-init data-te-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                Accordion Item #1
+                                <span
+                                    class="ml-auto h-5 w-5 shrink-0 rotate-[180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="!visible" data-te-collapse-item data-te-collapse-show
+                            aria-labelledby="headingOne" data-te-parent="#accordion">
+                            <div class="px-5 py-4">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                                collapse plugin adds the appropriate classes that we use to style each element. These classes
+                                control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                                modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                                that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                                does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+                        <h2 class="mb-0" id="headingTwo">
+                            <button class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                                type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseTwo"
+                                aria-expanded="false" aria-controls="collapseTwo">
+                                Accordion Item #2
+                                <span
+                                    class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="!visible hidden" data-te-collapse-item aria-labelledby="headingTwo"
+                            data-te-parent="#accordion">
+                            <div class="px-5 py-4">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                                collapse plugin adds the appropriate classes that we use to style each element. These classes
+                                control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                                modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                                that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                                does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-b-lg border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+                        <h2 class="accordion-header mb-0" id="headingThree">
+                            <button class="group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)] [&[data-te-collapse-collapsed]]:rounded-b-[15px] [&[data-te-collapse-collapsed]]:transition-none"
+                                type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseThree"
+                                aria-expanded="false" aria-controls="collapseThree">
+                                Accordion Item #3
+                                <span
+                                    class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="!visible hidden" data-te-collapse-item aria-labelledby="headingThree"
+                            data-te-parent="#accordion">
+                            <div class="px-5 py-4">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                                collapse plugin adds the appropriate classes that we use to style each element. These classes
+                                control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                                modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                                that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                                does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Container -->
+            <div class="container mx-auto p-4">
+                <!-- Title -->
+                <div class="text-center py-8">
+                    <h1 class="text-4xl font-bold text-green-500">ProTualis</h1>
+                    <p class="text-gray-500 mt-2">A catchy tagline for your product or service</p>
+                </div>
+
+                <!-- Main Content -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Feature 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-xl font-bold text-green-500 mb-4">Feature 1</h2>
+                        <p class="text-gray-600">Description of the first feature. Highlight its benefits and advantages.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-xl font-bold text-green-500 mb-4">Feature 2</h2>
+                        <p class="text-gray-600">Description of the second feature. Convince users of its importance.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-xl font-bold text-green-500 mb-4">Feature 3</h2>
+                        <p class="text-gray-600">Description of the third feature. Explain how it adds value to the user.</p>
+                    </div>
+                </div>                
+            </div>
+
+            <!-- Formulaire -->
+            <div class="container mx-auto p-4">
+                <h2 class="text-2xl font-semibold mb-6">Formulaire</h2>
+        
+                <form>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="mb-4">
+                            <label for="nom" class="block text-sm font-medium text-gray-600">
+                                Nom <span class="text-red-500">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                id="nom"
+                                name="nom"
+                                class="mt-1 p-2 w-full border rounded-md"
+                                required
+                                onfocus="handleInputFocus('nom', 'nom-label')"
+                                onblur="handleInputBlur('nom', 'nom-label')"
+                            />
+                        </div>
+        
+                        <div class="mb-4">
+                            <label for="prenom" class="block text-sm font-medium text-gray-600">
+                                Prénom <span class="text-red-500">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                id="prenom"
+                                name="prenom"
+                                class="mt-1 p-2 w-full border rounded-md"
+                                required
+                                onfocus="handleInputFocus('prenom', 'prenom-label')"
+                                onblur="handleInputBlur('prenom', 'prenom-label')"
+                            />
+                        </div>
+        
+                        <div class="mb-4 col-span-2">
+                            <label for="email" class="block text-sm font-medium text-gray-600">
+                                Email <span class="text-red-500">*</span>
+                            </label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="mt-1 p-2 w-full border rounded-md"
+                                required
+                                onfocus="handleInputFocus('email', 'email-label')"
+                                onblur="handleInputBlur('email', 'email-label')"
+                            />
+                        </div>
+        
+                        <div class="mb-4 col-span-2">
+                            <label for="message" class="block text-sm font-medium text-gray-600">
+                                Message <span class="text-red-500">*</span>
+                            </label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="4"
+                                class="mt-1 p-2 w-full border rounded-md"
+                                required
+                                onfocus="handleInputFocus('message', 'message-label')"
+                                onblur="handleInputBlur('message', 'message-label')"
+                            ></textarea>
+                        </div>
+        
+                        <div class="col-span-2">
+                            <button type="submit" class="bg-blue-500 text-white p-2 rounded-md">Envoyer</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 bg-gray-800 text-white p-8">
+            <!-- Colonne 1 -->
+            <div class="mb-4 sm:mb-0">
+                <h2 class="text-lg font-bold mb-2">À propos de nous</h2>
+                <p>Une description de votre entreprise.</p>
+            </div>
+    
+            <!-- Colonne 2 -->
+            <div class="mb-4 sm:mb-0">
+                <h2 class="text-lg font-bold mb-2">Liens utiles</h2>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Colonne 3 -->
+            <div class="mb-4 sm:mb-0">
+                <h2 class="text-lg font-bold mb-2">Contactez-nous</h2>
+                <p>Email: info@example.com</p>
+                <p>Téléphone: +123 456 7890</p>
+            </div>
+    
+            <!-- Colonne 4 -->
+            <div>
+                <h2 class="text-lg font-bold mb-2">Suivez-nous</h2>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Script -->
+        <script src="../assets/js/script.js"></script>
+    
+   
+
+</body>
+</html>
