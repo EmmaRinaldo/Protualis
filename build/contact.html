@@ -1,0 +1,158 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact - Protualis</title>
+        <link rel="stylesheet" href="../assets/css/style.css">
+    </head>
+
+    <body class="font-sans bg-gray-100">
+        <!-- Style -->
+        <style>
+            .label-moved {
+                transform: translate(-0.25rem, -2rem);
+                font-size: 0.75rem;
+                color: #4a5568; /* Couleur du texte du label déplacé */
+            }
+            .force-margin-left {
+                margin-left: 15px; /* Ajoutez la valeur de votre choix */
+            }
+
+            h2{
+                text-align: center;
+            }
+        </style>
+
+        <!-- Header -->
+        <header class="sticky top-0 z-10">
+            <!-- Sticky Navbar -->
+            <nav class="bg-green-800 shadow-md p-4">
+                <div class="container mx-auto flex items-center justify-between">
+                    <a href="index.html"><h1 class="text-2xl font-bold text-white">ProTualis</h1></a>
+
+                    <!-- Navbar Links for Desktop -->
+                    <div class="hidden md:flex items-center space-x-4 nav-links">
+                        <a href="index.html#faq" class="text-white">FAQ</a>
+                        <a href="media.html" class="text-white">MEDIA</a>
+                        <a href="contact.html" class="text-white">CONTACT</a>
+                    </div>
+
+                    <!-- Hamburger Toggle for Mobile -->
+                    <button class="md:hidden text-white nav-toggle">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden fixed top-16 left-0 right-0 bg-green-800 p-4 nav-mobile hidden">
+                <a href="index.html#faq" class="text-white">FAQ</a>
+                <a href="media.html" class="text-white">BLOG</a>
+                <a href="contact.html" class="text-white">CONTACT</a>
+            </div>
+        </header>
+            
+        <!-- Main -->
+        <main>
+            <!-- Formulaire section -->
+            <div class="container mx-auto p-4">
+                <h2 class="text-2xl font-semibold mb-6">NOUS CONTACTER</h2>
+                <form>
+                     <div class="grid grid-cols-2 gap-4">
+                        <div class="mb-4 relative flex items-center justify-center transition-all transform">
+                            <label for="nom" class="block text-sm font-medium text-white absolute force-margin-left" id="nom-label">
+                                NOM <span class="text-red-500">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                id="nom"
+                                name="nom"
+                                class="mt-1 p-2 w-full border rounded-md bg-blue-200"
+                                required
+                                onfocus="handleInputFocus('nom', 'nom-label')"
+                                onblur="handleInputBlur('nom', 'nom-label')"
+                            />
+                        </div>
+                        <div class="mb-4 relative flex items-center justify-center transition-all transform">
+                            <label for="prenom" class="block text-sm font-medium text-white absolute force-margin-left" id="prenom-label">
+                                PRENOM <span class="text-red-500">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                id="prenom"
+                                name="prenom"
+                                class="mt-1 p-2 w-full border rounded-md bg-blue-200"
+                                required
+                                onfocus="handleInputFocus('prenom', 'prenom-label')"
+                                onblur="handleInputBlur('prenom', 'prenom-label')"
+                            />
+                        </div>
+                        <div class="mb-4 col-span-2 relative flex items-center justify-center transition-all transform">
+                            <label for="email" class="block text-sm font-medium text-white absolute force-margin-left" id="email-label">
+                                ADRESSE MAIL <span class="text-red-500">*</span>
+                            </label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="mt-1 p-2 w-full border rounded-md bg-blue-200"
+                                required
+                                onfocus="handleInputFocus('email', 'email-label')"
+                                onblur="handleInputBlur('email', 'email-label')"
+                            />
+                        </div>
+                        <div class="mb-4 col-span-2 relative flex items-center justify-center transition-all transform">
+                            <label for="subject" class="block text-sm font-medium text-white absolute force-margin-left" id="subject-label">
+                                SUJET <span class="text-red-500">*</span>
+                            </label>
+                            <select
+                                id="subject"
+                                name="subject"
+                                class="mt-1 p-2 w-full border rounded-md bg-blue-200"
+                                required
+                                onfocus="handleInputFocus('subject', 'subject-label')"
+                                onblur="handleInputBlur('subject', 'subject-label')"
+                            >
+                                <option value="" disabled selected></option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                                <option value="option4">Option 4</option>
+                            </select>
+                        </div>
+                
+                        <div class="mb-4 col-span-2 relative flex  transition-all transform">
+                            <label for="message" class="block text-sm font-medium text-white absolute force-margin-left mt-3" id="message-label">
+                                ÉCRIVEZ VOTRE MESSAGE ... 
+                                <span class="text-red-500">*</span>
+                            </label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="4"
+                                class="mt-1 p-2 w-full border rounded-md bg-blue-200"
+                                required
+                                onfocus="handleInputFocus('message', 'message-label')"
+                                onblur="handleInputBlur('message', 'message-label')"
+                            ></textarea>
+                        </div>
+                        <div class="col-span-2">
+                            <button type="submit" class="bg-blue-200 text-white p-2 rounded-md">Envoyer</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        
+
+        <!-- Script -->
+        <script src="../assets/js/script.js"></script>
+    </body>
+</html>
