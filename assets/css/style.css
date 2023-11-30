@@ -1456,3 +1456,27 @@ video {
 .\[\&\[data-te-collapse-collapsed\]\]\:transition-none[data-te-collapse-collapsed] {
   transition-property: none;
 }
+
+
+/* SVG personalisé */
+
+.custom-svg {
+  width: 40px; 
+  height: 40px; 
+  cursor: pointer;
+  animation: bounce 1s infinite alternate;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}

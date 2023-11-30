@@ -48,9 +48,16 @@
             <section class="relative mx-auto grid grid-cols-1">
                 <div class="md:col-span-1 lg:col-span-2"></div>
                 <!-- Video Embed -->
-                <div class="md:col-span-2 lg:col-span-1 relative">
+                <div class="md:col-span-2 lg:col-span-1 ">
+                    <!-- SVG personnalisé -->
+                    <a href="#qui-sommes-nous">
+                        <svg class="custom-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" >
+                            <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    
                     <!-- Video Iframe -->
-                    <div class="relative overflow-hidden">
+                    <div class=" overflow-hidden">
                         <iframe
                             class="h-screen"
                             width="100%"
@@ -60,20 +67,16 @@
                             allow="autoplay; encrypted-media"
                             allowfullscreen
                         >
-                    </iframe>
+                        </iframe>
                     </div>
-                    <!-- SVG personnalisé -->
-                    <svg class="w-10 h-10 stroke-2 stroke-green-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" >
-                        <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd" />
-                    </svg>
                 </div>
             </section>
 
             <!-- Qui somme nous ? Section -->
-            <section>
+            <section id="qui-sommes-nous">
                 <div class="container mx-auto text-center">
                     <h2 class="text-3xl font-bold text-coral-400 mb-8">Qui sommes-nous ?</h2>
-                    <p class="text-gray-700">ProTualis est une application web qui permet de protéger les droits d’auteurs des artistes. En garantissant, la protection contre les fraudes et les plagiats. En bannissant, toutes les personnes ne respectant pas les conditions d’utilisation au profit de l’application. Ce dispositif, s’assurera également de votre protection personnelle au profit de la bonne gestion de vos données personnelles.</p>
+                    <p class="text-gray-700">Une équipe luttant pour la protection des droits d’auteur face à l’IA. <br> Nous souhaitons la protection de l’innovation authentique, soutenir la créativité, préserver l'Intégrité Artistique, l’innovation responsable et la sensibilisation collective. <br> Construisons ensemble un futur créatif et éthique !</p>
                 </div>
             </section>
 
@@ -127,7 +130,7 @@
             </section>
 
             <!-- FAQ Section -->
-            <section id="faq" class="p-8">
+            <section class="p-8">
                 <h2 class="text-3xl font-bold text-green-800 mb-8">FAQ</h2>
                 <!-- Accordion Item 1 -->
                 <div class="rounded-lg border border-neutral-200 mb-4 bg-white">
@@ -157,7 +160,7 @@
                         <button class="group relative flex w-full items-center rounded-lg border-0 px-5 py-4 text-left transition hover:z-[2] focus:z-[3] focus:outline-none bg-blue-200 font-bold text-green-800"
                             type="button" data-te-collapse-init data-te-target="#collapseTwo" aria-expanded="true"
                             aria-controls="collapseTwo">
-                            Comment vérifier si mes œuvres sont dans les bases de données de l'IA?
+                            Comment vérifier si mes œuvres sont dans les bases de données de l'IA ?
                             <span
                                 class="ml-auto h-5 w-5 shrink-0 fill-[#336dec] transition-transform duration-200 ease-in-out">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"

@@ -64,7 +64,7 @@
                 <form>
                      <div class="grid grid-cols-2 gap-4">
                         <div class="mb-4 relative flex items-center justify-center transition-all transform">
-                            <label for="nom" class="block text-sm font-medium absolute force-margin-left" id="nom-label">
+                            <label for="nom" class="block text-sm font-medium absolute force-margin-left text-green-800" id="nom-label">
                                 Nom <span class="text-red-500">*</span>
                             </label>
                             <input
@@ -78,7 +78,7 @@
                             />
                         </div>
                         <div class="mb-4 relative flex items-center justify-center transition-all transform">
-                            <label for="prenom" class="block text-sm font-medium absolute force-margin-left" id="prenom-label">
+                            <label for="prenom" class="block text-sm font-medium absolute force-margin-left text-green-800" id="prenom-label">
                                 Prénom <span class="text-red-500">*</span>
                             </label>
                             <input
@@ -92,7 +92,7 @@
                             />
                         </div>
                         <div class="mb-4 col-span-2 relative flex items-center justify-center transition-all transform">
-                            <label for="email" class="block text-sm font-medium absolute force-margin-left" id="email-label">
+                            <label for="email" class="block text-sm font-medium absolute force-margin-left text-green-800" id="email-label">
                                 Adresse mail <span class="text-red-500">*</span>
                             </label>
                             <input
@@ -106,7 +106,7 @@
                             />
                         </div>
                         <div class="mb-4 col-span-2 relative flex items-center justify-center transition-all transform">
-                            <label for="subject" class="block text-sm font-medium absolute force-margin-left" id="subject-label">
+                            <label for="subject" class="block text-sm font-medium absolute force-margin-left text-green-800" id="subject-label">
                                 Sujet <span class="text-red-500">*</span>
                             </label>
                             <select
@@ -117,16 +117,16 @@
                                 onfocus="handleInputFocus('subject', 'subject-label')"
                                 onblur="handleInputBlur('subject', 'subject-label')"
                             >
-                                <option value="" disabled selected></option>
-                                <option value="option1">Option 1</option>
-                                <option value="option2">Option 2</option>
-                                <option value="option3">Option 3</option>
-                                <option value="option4">Option 4</option>
+                                <option class="bg-white text-sm font-medium text-green-800" value="" disabled selected></option>
+                                <option class="bg-white text-sm font-medium text-green-800" value="option1">Option 1</option>
+                                <option class="bg-white text-sm font-medium text-green-800" value="option2">Option 2</option>
+                                <option class="bg-white text-sm font-medium text-green-800" value="option3">Option 3</option>
+                                <option class="bg-white text-sm font-medium text-green-800" value="option4">Option 4</option>
                             </select>
                         </div>
                 
                         <div class="mb-4 col-span-2 relative flex  transition-all transform">
-                            <label for="message" class="block text-sm font-medium absolute force-margin-left mt-3" id="message-label">
+                            <label for="message" class="block text-sm font-medium absolute force-margin-left mt-3 text-green-800" id="message-label">
                                 Écrivez votre message ... 
                                 <span class="text-red-500">*</span>
                             </label>
@@ -141,7 +141,7 @@
                             ></textarea>
                         </div>
                         <div class="col-span-2">
-                            <button type="submit" class="bg-blue-200 p-2 rounded-md">Envoyer</button>
+                            <button type="submit" class="bg-blue-200 p-2 rounded-md text-green-800 font-medium">Envoyer</button>
                         </div>
                     </div>
                 </form>
