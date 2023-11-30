@@ -1,4 +1,7 @@
 <?php
+
+    // code php foncitonnel mais ne marche pas avec github pages 
+
     //get data from form  
     $name = $_POST['name'];
     $email= $_POST['email'];
