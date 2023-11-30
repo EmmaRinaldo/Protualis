@@ -31,25 +31,23 @@
             <nav class="bg-green-800 shadow-md p-4">
                 <div class="container mx-auto flex items-center justify-between">
                     <a href="index.html"><img src="assets/img/ProTualis_logo.png" alt=""></a>
-
                     <!-- Navbar Links for Desktop -->
                     <div class="hidden md:flex items-center space-x-4 nav-links">
                         <a href="index.html#faq" class="text-white">FAQ</a>
                         <a href="media.html" class="text-white">MEDIA</a>
                         <a href="contact.html" class="bg-blue-200 rounded-lg p-2">CONTACT</a>
                     </div>
-
                     <!-- Hamburger Toggle for Mobile -->
                     <button class="md:hidden text-white nav-toggle">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                                d="M4 6h16M4 12h16m-7 6h7">
+                            </path>
                         </svg>
                     </button>
                 </div>
             </nav>
-
             <!-- Mobile Menu -->
             <div class="md:hidden fixed top-16 left-0 right-0 bg-green-800 p-4 nav-mobile hidden">
                 <a href="index.html#faq" class="text-white">FAQ</a>
@@ -66,7 +64,7 @@
                 <form>
                      <div class="grid grid-cols-2 gap-4">
                         <div class="mb-4 relative flex items-center justify-center transition-all transform">
-                            <label for="nom" class="block text-sm font-medium text-white absolute force-margin-left" id="nom-label">
+                            <label for="nom" class="block text-sm font-medium absolute force-margin-left" id="nom-label">
                                 NOM <span class="text-red-500">*</span>
                             </label>
                             <input
@@ -80,7 +78,7 @@
                             />
                         </div>
                         <div class="mb-4 relative flex items-center justify-center transition-all transform">
-                            <label for="prenom" class="block text-sm font-medium text-white absolute force-margin-left" id="prenom-label">
+                            <label for="prenom" class="block text-sm font-medium absolute force-margin-left" id="prenom-label">
                                 PRENOM <span class="text-red-500">*</span>
                             </label>
                             <input
@@ -94,7 +92,7 @@
                             />
                         </div>
                         <div class="mb-4 col-span-2 relative flex items-center justify-center transition-all transform">
-                            <label for="email" class="block text-sm font-medium text-white absolute force-margin-left" id="email-label">
+                            <label for="email" class="block text-sm font-medium absolute force-margin-left" id="email-label">
                                 ADRESSE MAIL <span class="text-red-500">*</span>
                             </label>
                             <input
@@ -108,7 +106,7 @@
                             />
                         </div>
                         <div class="mb-4 col-span-2 relative flex items-center justify-center transition-all transform">
-                            <label for="subject" class="block text-sm font-medium text-white absolute force-margin-left" id="subject-label">
+                            <label for="subject" class="block text-sm font-medium absolute force-margin-left" id="subject-label">
                                 SUJET <span class="text-red-500">*</span>
                             </label>
                             <select
@@ -128,7 +126,7 @@
                         </div>
                 
                         <div class="mb-4 col-span-2 relative flex  transition-all transform">
-                            <label for="message" class="block text-sm font-medium text-white absolute force-margin-left mt-3" id="message-label">
+                            <label for="message" class="block text-sm font-medium absolute force-margin-left mt-3" id="message-label">
                                 ÉCRIVEZ VOTRE MESSAGE ... 
                                 <span class="text-red-500">*</span>
                             </label>
@@ -143,7 +141,7 @@
                             ></textarea>
                         </div>
                         <div class="col-span-2">
-                            <button type="submit" class="bg-blue-200 text-white p-2 rounded-md">Envoyer</button>
+                            <button type="submit" class="bg-blue-200 p-2 rounded-md">Envoyer</button>
                         </div>
                     </div>
                 </form>
@@ -153,46 +151,42 @@
         <!-- Footer -->
         <footer class="bg-green-800 text-white p-8">
             <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-              <div class="md:col-span-1">
-                <a href="index.html"><img src="assets/img/ProTualis_logo.png" alt="" class="h-16"></a>
-              </div>
-        
-              <div class="md:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div>
-                  <a href="#" class="text-gray-300 hover:text-white">Accueil</a>
+                <div class="md:col-span-1">
+                    <a href="index.html"><img src="assets/img/ProTualis_logo.png" alt="" class="h-16"></a>
                 </div>
-                <div>
-                  <a href="#" class="text-gray-300 hover:text-white">À propos</a>
+                <div class="md:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div>
+                        <a href="#" class="text-gray-300 hover:text-white">Accueil</a>
+                    </div>
+                    <div>
+                        <a href="#" class="text-gray-300 hover:text-white">À propos</a>
+                    </div>
+                    <div>
+                        <a href="#" class="text-gray-300 hover:text-white">Contact</a>
+                    </div>
                 </div>
-                <div>
-                  <a href="#" class="text-gray-300 hover:text-white">Contact</a>
-                </div>
-              </div>
-        
             </div>
         
             <div class="container mx-auto flex justify-between mt-4">
-              <div>
-                <p class="text-sm">&copy; 2023 Votre Entreprise. Tous droits réservés.</p>
-              </div>
-              <div>
-                <a href="confidentialite.html" class="text-sm text-gray-300 hover:text-white">Politique de confidentialité</a>
-              </div>
-              <div class="md:col-span-1 flex flex-col items-end">
-                <p class="text-sm mb-2">Suivez-nous:</p>
-                <div class="flex space-x-4">
-                  <a href="#" class="text-gray-300 hover:text-white">
-                    f
-                  </a>
-                  <a href="#" class="text-gray-300 hover:text-white">
-                    ff
-                  </a>
+                <div>
+                    <p class="text-sm">&copy; 2023 Votre Entreprise. Tous droits réservés.</p>
                 </div>
-              </div>
+                <div>
+                    <a href="confidentialite.html" class="text-sm text-gray-300 hover:text-white">Politique de confidentialité</a>
+                </div>
+                <div class="md:col-span-1 flex flex-col items-end">
+                    <p class="text-sm mb-2">Suivez-nous:</p>
+                    <div class="flex space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-white">
+                        f
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white">
+                        ff
+                    </a>
+                    </div>
+                </div>
             </div>
         </footer>
-
-        
 
         <!-- Script -->
         <script src="assets/js/script.js"></script>
