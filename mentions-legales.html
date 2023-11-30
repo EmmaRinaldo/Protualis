@@ -12,35 +12,32 @@
   <body class="font-sans bg-gray-100">
     <!-- Header -->
     <header class="sticky top-0 z-10">
-        <!-- Sticky Navbar -->
-        <nav class="bg-green-800 shadow-md p-4">
-            <div class="container mx-auto flex items-center justify-between">
-                <a href="index.html"><img src="assets/img/ProTualis_logo.png" alt=""></a>
+      <!-- Sticky Navbar -->
+      <nav class="bg-green-800 shadow-md p-4">
+          <div class="container mx-auto flex items-center justify-between">
+              <a href="https://emmarinaldo.github.io/protualis/"><img src="assets/img/ProTualis_logo.png" alt=""></a>
+              <!-- Navbar Links for Desktop -->
+              <div class="hidden md:flex items-center space-x-4 nav-links">
+                  <a href="media.html" class="text-white">Médias</a>
+                  <a href="contact.html" class="bg-blue-200 rounded-lg p-2">Contact</a>
+              </div>
+              <!-- Hamburger Toggle for Mobile -->
+              <button class="md:hidden text-white nav-toggle">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16m-7 6h7">
+                      </path>
+                  </svg>
+              </button>
+          </div>
+      </nav>
 
-                <!-- Navbar Links for Desktop -->
-                <div class="hidden md:flex items-center space-x-4 nav-links">
-                    <a href="index.html#faq" class="text-white">FAQ</a>
-                    <a href="media.html" class="text-white">MEDIA</a>
-                    <a href="contact.html" class="bg-blue-200 rounded-lg p-2">CONTACT</a>
-                </div>
-
-                <!-- Hamburger Toggle for Mobile -->
-                <button class="md:hidden text-white nav-toggle">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
-        </nav>
-
-        <!-- Mobile Menu -->
-        <div class="md:hidden fixed top-16 left-0 right-0 bg-green-800 p-4 nav-mobile hidden">
-            <a href="index.html#faq" class="text-white">FAQ</a>
-            <a href="media.html" class="text-white">MEDIA</a>
-            <a href="contact.html" class="bg-blue-200 rounded-lg p-2">CONTACT</a>
-        </div>
+      <!-- Mobile Menu -->
+      <div class="md:hidden fixed top-16 left-0 right-0 bg-green-800 p-4 nav-mobile hidden">
+          <a href="media.html" class="text-white">Médias</a>
+          <a href="contact.html" class="bg-blue-200 rounded-lg p-2">Contact</a>
+      </div>
     </header>
 
     <!-- Main -->
