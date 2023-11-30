@@ -5,7 +5,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Protualis</title>
-        <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="../assets/css/style.css">
         <link rel="stylesheet" href="../assets/fonts/HankenGrotesk.ttf">
     </head>
@@ -47,13 +46,13 @@
             <!-- Sticky Navbar -->
             <nav class="bg-green-800 shadow-md p-4">
                 <div class="container mx-auto flex items-center justify-between">
-                    <a href="index.html"><h1 class="text-2xl font-bold text-white">ProTualis</h1></a>
+                    <a href="index.html"><img src="../assets/img/ProTualis_logo.png" alt=""></a>
 
                     <!-- Navbar Links for Desktop -->
                     <div class="hidden md:flex items-center space-x-4 nav-links">
                         <a href="index.html#faq" class="text-white">FAQ</a>
-                        <a href="blog.html" class="text-white">BLOG</a>
-                        <a href="https://emmarinaldo.github.io/protualis/build/contact.html" class="text-white">CONTACT</a>
+                        <a href="media.html" class="text-white">MEDIA</a>
+                        <a href="contact.html" class="bg-blue-200 rounded-lg p-2">CONTACT</a>
                     </div>
 
                     <!-- Hamburger Toggle for Mobile -->
@@ -70,8 +69,8 @@
             <!-- Mobile Menu -->
             <div class="md:hidden fixed top-16 left-0 right-0 bg-green-800 p-4 nav-mobile hidden">
                 <a href="index.html#faq" class="text-white">FAQ</a>
-                <a href="blog.html" class="text-white">BLOG</a>
-                <a href="https://emmarinaldo.github.io/protualis/build/contact.html" class="text-white">CONTACT</a>
+                <a href="media.html" class="text-white">MEDIA</a>
+                <a href="contact.html" class="bg-blue-200 rounded-lg p-2">CONTACT</a>
             </div>
         </header>
             
@@ -84,14 +83,12 @@
 
                 <!-- Video Embed -->
                 <div class="md:col-span-2 lg:col-span-1 relative">
-                    <!-- SVG personnalisé -->
-                    <svg class="custom-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#333">
-                        <path d="M12 21l-12-18h24z" />
-                    </svg>
+                    
                     
                     <!-- Video Iframe -->
                     <div class="relative overflow-hidden">
                         <iframe
+                            class="h-screen"
                             width="100%"
                             height="315"
                             src="https://www.youtube.com/embed/your-video-id"
@@ -100,9 +97,19 @@
                             allowfullscreen
                         ></iframe>
                     </div>
+                    
+                    <!-- SVG personnalisé -->
+                    <svg class="w-10 h-10 stroke-2 stroke-green-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" >
+                        <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd" />
+                      </svg>
+                      
                 </div>
             </section>
 
+            <!-- Qui somme nous ? -->
+            <section>
+
+            </section>
 
             <!-- Objectifs Section -->
             <section class="p-8">
@@ -271,7 +278,7 @@
         <footer class="bg-green-800 text-white p-8">
             <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
               <div class="md:col-span-1">
-                <img src="votre-logo.png" alt="Logo" class="h-16">
+                <a href="index.html"><img src="../assets/img/ProTualis_logo.png" alt="" class="h-16"></a>
               </div>
         
               <div class="md:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -293,7 +300,7 @@
                 <p class="text-sm">&copy; 2023 Votre Entreprise. Tous droits réservés.</p>
               </div>
               <div>
-                <a href="#" class="text-sm text-gray-300 hover:text-white">Politique de confidentialité</a>
+                <a href="confidentialite.html" class="text-sm text-gray-300 hover:text-white">Politique de confidentialité</a>
               </div>
               <div class="md:col-span-1 flex flex-col items-end">
                 <p class="text-sm mb-2">Suivez-nous:</p>
