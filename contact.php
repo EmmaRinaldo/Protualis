@@ -1,21 +1,37 @@
 <?php
 
-    // code php foncitonnel mais ne marche pas avec github pages 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    //get data from form  
-    $name = $_POST['name'];
-    $email= $_POST['email'];
-    $message= $_POST['message'];
-    $to = "emmarinaldo@hotmail.fr";
-    $subject = "Mail From website";
-    $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message = " . $message;
-    $headers = "From: noreply@https://emmarinaldo.github.io/protualis/";
-    if($email!=NULL){
-        mail($to,$subject,$txt,$headers);
+    $name = htmlspecialchars($_POST['prenom']);
+    $surname = htmlspecialchars($_POST['nom']);
+    $email = htmlspecialchars($_POST['email']);
+    $subject = htmlspecialchars($_POST['subject']);
+    $message = htmlspecialchars($_POST['message']);
+
+
+    if (empty($name) || empty($surname) || empty($email) || empty($subject) || empty($message)) {
+
+        echo "Veuillez remplir tous les champs obligatoires.";
+        exit();
     }
-    //redirect
-    //header("Location: ../thankyou.html");
-    echo'
+
+
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+
+        echo "Veuillez entrer une adresse e-mail valide.";
+        exit();
+    }
+
+
+    $to = "agence.crealize@gmail.com";
+    $subject = "Mail From Protualis";
+    $txt = "Name: $name $surname \r\nEmail: $email \r\nSubject: $subject \r\nMessage: $message";
+    $headers = "From: noreply@https://emmarinaldo.github.io/protualis/";
+
+    // Send the email
+    if (mail($to, $subject, $txt, $headers)) {
+        //header("Location: thank_you.html");
+        echo'
     <!DOCTYPE html>
     <html lang="fr">
         <head>
@@ -110,4 +126,14 @@
             </body>
         </html>
     ';
+        exit();
+    } else {
+        // Handle the case where the email could not be sent
+        echo "Une erreur s'est produite lors de l'envoi du formulaire.";
+        exit();
+    }
+} else {
+    // Handle the case where the form is not submitted properly
+    echo "Erreur de soumission du formulaire.";
+}
 ?>
