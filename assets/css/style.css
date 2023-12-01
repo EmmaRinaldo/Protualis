@@ -1492,3 +1492,10 @@ video {
 figcaption {
   display: none;
 }
+
+/* Margin forcé  */
+
+.marg-force{
+  margin-left: 10%;
+  margin-right: 10%;
+}
