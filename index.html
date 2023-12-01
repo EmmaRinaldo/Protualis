@@ -45,30 +45,22 @@
         <!-- Main -->
         <main class="m-100">
             <!-- Video Section -->
-            <section class="relative mx-auto">
-                <!--<div class="md:col-span-1 lg:col-span-1"></div>-->
+            <section class="relative w-full h-screen overflow-hidden flex items-end justify-center">
                 <!-- Video Embed -->
-                <div>
-                    <!-- SVG personnalisé -->
-                    <a href="#qui-sommes-nous">
-                        <svg class="custom-svg w-11 h-11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" >
-                            <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd" />
+                <div id="ytplayer" class="absolute top-0 left-0 w-full h-full"></div>
+
+                <!-- Flèche SVG centrée en bas -->
+                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-white">
+                    <a href="#qui-sommes-nous" class="inline-block p-2 rounded-full bg-gray-800">
+                        <!-- Flèche SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#fff" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                         </svg>
                     </a>
-                    
-                    <!-- Video Iframe -->
-                    <div class="">
-                        <iframe
-                            class="w-full h-screen"
-                            src="https://www.youtube.com/embed/your-video-id"
-                            frameborder="0"
-                            allow="autoplay; encrypted-media"
-                            allowfullscreen
-                        >
-                        </iframe>
-                    </div>
                 </div>
+
             </section>
+
 
             <!-- Qui somme nous ? Section -->
             <section id="qui-sommes-nous">
@@ -117,7 +109,7 @@
 
             <!-- Info Section -->
             <section class="grid grid-cols-2 mx-auto">
-                <div class="grid grid-rows-2 mx-auto text-center">
+                <div class="mx-auto text-center">
                     <h2 class="text-3xl font-bold text-coral-400 mb-8">Qui détient les droits d'auteur sur une oeuvre générée par l'IA ?</h2>
                     <p class="text-gray-700">Est-ce le concepteur de l'algorithme, l'entreprise qui l'utilise, ou l'IA elle-même ?
                         Peut-on considérer l’IA comme un artiste unique à lui même , ou peut t-on dire que celui-ci est le concurrent directe de l’Homme lui même ?</p>
@@ -251,36 +243,36 @@
         </main>
 
         <!-- Footer -->
-        <footer class="bg-green-800 text-white p-8">
-            <div class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="md:col-span-1">
+        <footer class="grid grid-rows-2 bg-green-800 text-white p-8">
+            <div class="lg:flex lg:items-center lg:justify-between md:flex md:flex-col md:justify-center items-center justify-between mb-8">
+                <div>
+                    <!-- Logo -->
                     <a href="https://emmarinaldo.github.io/protualis/">
                         <img src="assets/img/ProTualis_logo.png" alt="" class="h-16">
                     </a>
                 </div>
-                <div class="md:col-span-3 grid grid-cols-3 md:grid-cols-3 gap-4">
-                    <div>
-                        <a href="#" class="text-gray-300 hover:text-white">Accueil</a>
-                    </div>
-                    <div>
-                        <a href="#" class="text-gray-300 hover:text-white">À propos</a>
-                    </div>
-                    <div>
-                        <a href="#" class="text-gray-300 hover:text-white">Contact</a>
-                    </div>
+                <div>
+                    <ul class="lg:flex lg:items-center lg:justify-between md:flex md:flex-col md:justify-center items-center">
+                        <li class="lg:space-x-4">
+                            <a href="media.html" class="hover:text-gray-400">Médias</a>
+                        </li>
+                        <li class="lg:space-x-4">
+                            <a href="contact.html" class="hover:text-gray-400">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        
-            <div class="container mx-auto grid grid-cols-3 md:grid-cols-4 gap-8">
-                <div class="md:col-span-1">
-                    <p class="text-sm">&copy; 2023 DC Paris. Tous droits réservés.</p>
+    
+            <div class="lg:flex lg:items-center lg:justify-between md:flex md:flex-col md:justify-center items-center justify-between">
+                <div>
+                    <p>@Protualis, inc 2023 copyright DC Paris</p>
                 </div>
-                <div class="md:col-span-1">
-                    <a href="mentions-legales.html" class="text-sm text-gray-300 hover:text-white">Mentions Légales</a>
+                <div>
+                    <a href="mentions-legales.html">Mentions légales</a>
                 </div>
-                <div class="md:col-span-2 grid grid-cols-2 items-end">
-                    <p class="text-sm mb-2">Suivez-nous:</p>
-                    <div class="grid grid-cols-4 space-x-4">
+                <div class="lg:flex lg:items-center lg:justify-between md:flex md:flex-col md:justify-center items-center">
+                    <span>Suivez-nous:</span>
+                    <div class="flex items-center">
                         <a href="#" class="">
                             <img src="assets/img/logo_linkedin.png" alt="" class="h-11">
                         </a>
@@ -301,5 +293,6 @@
  
         <!-- Script -->
         <script src="assets/js/script.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
     </body>
 </html>

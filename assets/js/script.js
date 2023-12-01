@@ -57,3 +57,28 @@
             label.classList.remove('label-moved');
         }
     }         
+
+
+    // YouTube API script
+    var player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('ytplayer', {
+            videoId: 'VIDEO_ID',  // Remplace 'VIDEO_ID' par l'ID de ta vidéo YouTube
+            playerVars: {
+                autoplay: 1,
+                loop: 1,
+                controls: 0,
+                showinfo: 0,
+                autohide: 1,
+                modestbranding: 1,
+                vq: 'hd1080'
+            },
+            events: {
+                onReady: onPlayerReady
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        event.target.mute(); // Optionnel : Pour couper le son de la vidéo
+    }
