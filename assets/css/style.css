@@ -1488,3 +1488,7 @@ video {
 .force-margin-left {
   margin-left: 15px; /* Ajoutez la valeur de votre choix */
 }
+
+figcaption {
+  display: none;
+}
